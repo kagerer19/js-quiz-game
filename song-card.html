@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎶Guess the song🎶 </title>
+    <link rel="stylesheet" href="styles/album-card.css">
+    <link rel="stylesheet" href="styles/img-grid.css">
+    <link rel="stylesheet" href="styles/musical-cursor.css">
+</head>
+<body>
+<header style="background-image: url('assets/music(1).png')">
+    <h1>🎶 GUESS THE SONG 🎶</h1>
+</header>
+<main class="grid">
+    <section class="album-card blur" data-card-id="1">
+        <div class="album-content">
+            <span class="play-btn">
+                        <audio class="myAudio" controls>
+                            <source src="assets/audio/sampleTracks/guessTrack1.mp3" type="audio/mp3">
+                        </audio>
+                            <img src="assets/svgs/play-btn.svg" alt="play-button" onclick="togglePlayPause(this)">
+                    </span>
+            <div class="options">
+                <button class="guess-option">Option 1</button>
+                <button class="guess-option">Option 2</button>
+                <button class="guess-option">Option 3</button>
+            </div>
+            <span class="score">Score: 0</span>
+        </div>
+    </section>
+    <section class="album-card blur" data-card-id="2">
+        <div class="album-content">
+            <span class="play-btn">
+                        <audio class="myAudio" controls>
+                            <source src="assets/audio/sampleTracks/guessTrack2.mp3" type="audio/mp3">
+                        </audio>
+                        <img src="assets/svgs/play-btn.svg" alt="play-button" onclick="togglePlayPause(this)">
+                    </span>
+            <div class="options">
+                <button class="guess-option">Option 1</button>
+                <button class="guess-option">Option 2</button>
+                <button class="guess-option">Option 3</button>
+            </div>
+            <span class="score">Score: 0</span>
+        </div>
+    </section>
+    <section class="album-card blur" data-card-id="3">
+        <div class="album-content">
+            <span class="play-btn">
+                        <audio class="myAudio" controls>
+                            <source src="assets/audio/sampleTracks/guessTrack3.mp3" type="audio/mp3">
+                        </audio>
+                        <img src="assets/svgs/play-btn.svg" alt="play-button" onclick="togglePlayPause(this)">
+                    </span>
+            <div class="options">
+                <button class="guess-option">Option 1</button>
+                <button class="guess-option">Option 2</button>
+                <button class="guess-option">Option 3</button>
+            </div>
+            <span class="score">Score: 0</span>
+        </div>
+    </section>
+    <section class="album-card blur" data-card-id="4">
+        <div class="album-content">
+            <span class="play-btn">
+                        <audio class="myAudio" controls>
+                            <source src="assets/audio/sampleTracks/guessTrack4.mp3" type="audio/mp3">
+                        </audio>
+                        <img src="assets/svgs/play-btn-med.svg" alt="play-button" onclick="togglePlayPause(this)">
+                    </span>
+            <div class="options">
+                <button class="guess-option">Option 1</button>
+                <button class="guess-option">Option 2</button>
+                <button class="guess-option">Option 3</button>
+            </div>
+            <span class="score">Score: 0</span>
+        </div>
+    </section>
+    <section class="album-card blur" data-card-id="5">
+        <div class="album-content">
+            <span class="play-btn">
+                        <audio class="myAudio" controls>
+                            <source src="assets/audio/sampleTracks/guessTrack5.mp3" type="audio/mp3">
+                        </audio>
+                        <img src="assets/svgs/play-btn-med.svg" alt="play-button" onclick="togglePlayPause(this)">
+                    </span>
+            <div class="options">
+                <button class="guess-option">Option 1</button>
+                <button class="guess-option">Option 2</button>
+                <button class="guess-option">Option 3</button>
+            </div>
+            <span class="score">Score: 0</span>
+        </div>
+    </section>
+    <section class="album-card blur" data-card-id="6">
+        <div class="album-content">
+            <span class="play-btn">
+                        <audio class="myAudio" controls>
+                            <source src="assets/audio/sampleTracks/guessTrack6.mp3" type="audio/mp3">
+                        </audio>
+                        <img src="assets/svgs/play-btn-med.svg" alt="play-button" onclick="togglePlayPause(this)">
+                    </span>
+            <div class="options">
+                <button class="guess-option">Option 1</button>
+                <button class="guess-option">Option 2</button>
+                <button class="guess-option">Option 3</button>
+            </div>
+            <span class="score">Score: 0</span>
+        </div>
+    </section>
+    <section class="album-card blur" data-card-id="7">
+        <div class="album-content">
+            <span class="play-btn">
+                        <audio class="myAudio" controls>
+                            <source src="assets/audio/sampleTracks/guessTrack7.mp3" type="audio/mp3">
+                        </audio>
+                        <img src="assets/svgs/play-btn-hard.svg" alt="play-button" onclick="togglePlayPause(this)">
+                    </span>
+            <div class="options">
+                <button class="guess-option"></button>
+                <button class="guess-option"></button>
+                <button class="guess-option"></button>
+            </div>
+            <span class="score">Score: 0</span>
+        </div>
+    </section>
+    <section class="album-card blur" data-card-id="8">
+        <div class="album-content">
+            <span class="play-btn">
+                        <audio class="myAudio" controls>
+                            <source src="assets/audio/sampleTracks/guessTrack8.mp3" type="audio/mp3">
+                        </audio>
+                        <img src="assets/svgs/play-btn-hard.svg" alt="play-button" onclick="togglePlayPause(this)">
+                    </span>
+            <div class="options">
+                <button class="guess-option">Option 1</button>
+                <button class="guess-option">Option 2</button>
+                <button class="guess-option">Option 3</button>
+            </div>
+            <span class="score">Score: 0</span>
+        </div>
+    </section>
+    <section class="album-card blur" data-card-id="9">
+        <div class="album-content">
+            <span class="play-btn">
+                        <audio class="myAudio" controls>
+                            <source src="assets/audio/sampleTracks/guessTrack9.mp3" type="audio/mp3">
+                        </audio>
+                        <img src="assets/svgs/play-btn-hard.svg" alt="play-button" onclick="togglePlayPause(this)">
+                    </span>
+            <div class="options">
+                <button class="guess-option">Option 1</button>
+                <button class="guess-option">Option 2</button>
+                <button class="guess-option">Option 3</button>
+            </div>
+            <span class="score">Score: 0</span>
+        </div>
+    </section>
+</main>
+<div id="musical-notes-container"></div>
+<script src="Src/app.js"></script>
+</body>
+</html>
+

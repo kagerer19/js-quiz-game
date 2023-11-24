@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+
+:root {
+    --primary-text-color: #d0cece;
+    --secondary-text-color: #303134;
+    ---text-color-white: #F6F6F6;
+    --primary-font: 'Outfit', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: var(--primary-text-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 23px;
+    /* margin-left: 200px; */
+    max-width: 100%;
+    margin: 30px;
+}
+
+header {
+    padding: 20px 40px;
+    align-items: center;
+    background-image: url("assets/music(1).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    height: 15%;
+    max-width: 100%;
+}
+
+header h1, footer h1 {
+    grid-column: span 6;
+    color: var(---text-color-white);
+}
+
+h1 {
+    text-align: center;
+}
+
+header nav, footer nav {
+    grid-column: 7 / span 6;
+    justify-self: end;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0 40%;
+    gap: 1em;
+}
+
+header nav a, footer nav a {
+    color: var(---text-color-white);
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px;
+}
+
+main img {
+    grid-column: span 6;
+    width: 100%;
+    border-radius: 6px;
+}
+
+main .card-content {
+    grid-column: 8 / span 5;
+}
+
+
+main > h2 {
+    grid-column: span 12;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+main .card {
+    grid-column: span 4;
+    background: var(---text-color-white);
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 960px) {
+    main img {
+        grid-column: 2 / span 10;
+    }
+
+    main .card-content {
+        grid-column: 3 / span 8;
+        text-align: center;
+    }
+
+    main .card {
+        grid-column: 3 / span 8;
+    }
+
+    main {
+        justify-items: center;
+    }
+}

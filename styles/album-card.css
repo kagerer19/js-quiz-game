@@ -1,0 +1,63 @@
+h2, span {
+    color: #e3e1e1;
+}
+
+.album-card {
+    border-radius: 13px;
+    display: block;
+    width: 475px;
+    height: 415px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.blur {
+    filter: blur(1.5rem);
+}
+
+.play-btn {
+    align-self: center;
+    width: 75px;
+    padding: 0 30px 30px;
+}
+
+.play-btn, button {
+    cursor: pointer;
+}
+
+.album-content {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    text-align: center;
+    margin: 45px auto;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 10px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(217, 217, 217, 0.73);
+    color: #F3EFE0;
+    font-weight: bolder;
+}
+
+audio {
+    display: none;
+}
+
+span {
+    transition: transform 0.4s ease;
+}
+
+span:hover {
+    transform: scale(1.6);
+}
